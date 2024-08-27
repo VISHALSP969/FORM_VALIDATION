@@ -1,0 +1,8 @@
+@media (max-width:450px){
+    input{
+        width:250px;
+    }
+    h1{
+        font-size:25px;
+    }
+}

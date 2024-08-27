@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <div class="container">       
+        <form action="processor.html" method="get" id="Form" name="Form" onsubmit="return validate()" onreset="resetForm()">
+
+            <h1><u>Registration Form</u></h1>
+
+            <div class="form-field">
+                <label for="Name">Name :  </label>
+                <input type="text" value="" id="Name" name="Name" placeholder="Enter your name" autocomplete="off">
+                <small id="NameCheckMessage"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="Email">Email ID : </label>
+                <input type="email" value=""  id="Email" name="Email" placeholder="Enter your email id" autocomplete="off">
+                <small id="EmailCheckMessage"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="Mobile">Mobile No : </label>
+                <input type="tel" value="" id="Mobile" name="Mobile" placeholder="Enter your mobile number" autocomplete="off">
+                <small id="MobileCheckMessage"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="DOB">DOB : </label>
+                <input type="date" value="" id="DOB" name="DOB" autocomplete="off">
+                <small id="DobCheckMessage"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="Password">Password : </label>
+                <input type="password" value="" id="Password" name="Password" placeholder="Enter your password" autocomplete="off">
+                <small id="PasswordCheckMessage"></small>
+            </div>
+
+            <div class="form-field">
+                <label for="CPassword">Password : </label>
+                <input type="password" value=""  id="CPassword" name="CPassword" placeholder="Re-enter your password" autocomplete="off">
+                <small id="CPasswordCheckMessage"></small>
+            </div>
+
+            <div class="button-field">
+                <input type="submit" value="SUBMIT" id="SubmitButton">
+                <input type="reset" value="RESET" id="ResetButton">
+            </div>
+
+        </form>   
+         
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html> 
